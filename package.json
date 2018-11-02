@@ -74,7 +74,7 @@
   ],
   "devDependencies": {
     "cross-env": "^5.2.0",
-    "electron": "^3.0.6",
+    "electron": "^3.0.7",
     "electron-builder": "^20.29.0",
     "electron-builder-squirrel-windows": "^20.30.0",
     "eslint": "^4.5.0",
