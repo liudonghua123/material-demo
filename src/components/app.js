@@ -9,6 +9,14 @@ import NotFound from '../routes/404';
 // import Profile from 'async!../routes/profile';
 
 export default class App extends Component {
+
+	constructor(props, context) {
+		super(props, context);
+		this.state = {
+			currentUrl: '/'
+		};
+	  }
+
 	/** Gets fired when the route changes.
 	 *	@param {Object} event		"change" event from [preact-router](http://git.io/preact-router)
 	 *	@param {string} event.url	The newly routed URL
@@ -27,7 +35,7 @@ export default class App extends Component {
 					<Home path="/" />
 					<Profile path="/profile/" user="me" />
 					<Profile path="/profile/:user" />
-          <NotFound default />
+          			<NotFound default />
 				</Router>
 			</div>
 		);
