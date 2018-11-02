@@ -62,3 +62,7 @@ typings/
 # lock files
 yarn.lock
 package-lock.json
+
+# electron build files
+build
+dist
